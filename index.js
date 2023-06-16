@@ -90,6 +90,6 @@ const server = http.createServer((req,res)=>{
   res.end(data)
 })
 
-server.listen(80,()=>{
-  console.log("http running on port 80");
+server.listen(3000,()=>{
+  console.log("http running on port 3000");
 })
