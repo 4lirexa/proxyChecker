@@ -1,8 +1,8 @@
-const fs = require("node:fs");
+const fs = require("fs");
 const readline = require("readline");
 const spawn = require("child_process").spawn;
 var cron = require('node-cron');
-const http = require("node:http")
+const http = require("http")
 
 let isChecking = false;
 
