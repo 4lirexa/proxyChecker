@@ -1,0 +1,8 @@
+{
+    "disks" : [
+        {
+            "name" : "mydisk",
+            "mountTo" : "data"
+        }
+    ]
+}
