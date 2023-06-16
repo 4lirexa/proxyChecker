@@ -25,7 +25,7 @@ async function processLineByLine(filePath) {
 }
 
 const spawnTest = async (url) => {
-  spawn(`chmod 777 ${__dirname}/lite/lite`);
+  spawn(`bash -c "chmod 777 ${__dirname}/lite/lite"`);
   let ls = spawn(`bash -c "${__dirname}/lite/lite --config config.json --test ${url}"`, { shell: true, cwd: __dirname + "/lite" });
   ls.on("error", function (err) {
     console.log("ls error", err);
